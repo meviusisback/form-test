@@ -21,21 +21,65 @@
       </div>
       <div class="main-area">
         <div class="header">
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
-          to get started. <br /><br />
-          You know you want to. Let's do this!
+          <div class="header-text">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started. <br /><br />
+            You know you want to. Let's do this!
+          </div>
         </div>
         <div class="form">
-          <form action="" method="post">
+          <form id="account-form" action="" method="post">
             <div class="form-title">Let's do this!</div>
-            <div class="form-column-left">
-              
+            <div class="form-table">
+              <div class="form-column-left">
+                <div class="input-first-name labels">
+                  <label for="first-name">FIRST NAME</label>
+                  <input type="text" name="first-name" id="first-name" />
+                </div>
+                <div class="input-email labels">
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="input-password labels">
+                  <label for="password">PASSWORD</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-column-right">
+                <div class="input-last-name labels">
+                  <label for="last-name">LAST NAME</label>
+                  <input type="text" name="last-name" id="last-name" />
+                </div>
+                <div class="input-phone labels">
+                  <label for="phone">PHONE NUMBER</label>
+                  <input type="text" name="phone" id="phone" />
+                </div>
+                <div class="input-confirm-password labels">
+                  <label for="confirm-password">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    required
+                  />
+                </div>
+              </div>
             </div>
-            <div class="form-column-right"></div>
           </form>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+          <button type="submit" form="account-form">Create account</button>
+          <div class="main-footer-text">
+            Already have an account?
+            <a href="http://">Log In</a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
